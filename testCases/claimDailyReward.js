@@ -4,7 +4,7 @@ const rewardUrl = process.env.reward_URL;
 const email = process.env.reward_user_email;
 const pwd = process.env.reward_user_pwd;
 
-Scenario('test something', ({ I }) => {
+Scenario('Claim your daily rewards.', ({ I }) => {
     I.amOnPage(rewardUrl);
     I.wait(2);
     I.click('Log In');
